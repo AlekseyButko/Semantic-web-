@@ -195,18 +195,61 @@
 ### 2. Microdata
 ```html
 
-    Хмарний Атлас
-    
-        Девід Мітчелл
-    
+   <div class="container">
+        <!-- Microdata анотація -->
+        <article itemscope itemtype="https://schema.org/Book" class="book-card">
+            <img itemprop="image" src="/api/placeholder/200/300" alt="Обкладинка книги Три товариші" class="book-image">
+
+            <div class="book-details">
+                <h1 itemprop="name">Три товариші</h1>
+
+                <div>
+                    <strong>Автор:</strong>
+                    <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+                        <span itemprop="name">Еріх Марія Ремарк</span>
+                    </span>
+                </div>
+
+                <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                    <span class="rating">★★★★★</span>
+                    <span itemprop="ratingValue">4.7</span>/5
+                    на основі <span itemprop="reviewCount">1583</span> відгуків
+                </div>
+            </div>
+        </article>
 
 ```
 
 ### 3. RDFa
 ```html
 
-    978-3442267819
-    509
+   <section vocab="https://schema.org/" typeof="Book">
+            <h2>Деталі книги</h2>
+            <ul>
+                <li>
+                    <strong>ISBN:</strong>
+                    <span property="isbn">978-617-12-6067-2</span>
+                </li>
+                <li>
+                    <strong>Кількість сторінок:</strong>
+                    <span property="numberOfPages">480</span>
+                </li>
+                <li>
+                    <strong>Видавництво:</strong>
+                    <span property="publisher" typeof="Organization">
+                        <span property="name">Клуб Сімейного Дозвілля</span>
+                    </span>
+                </li>
+                <li>
+                    <strong>Дата публікації:</strong>
+                    <span property="datePublished">2018-05-10</span>
+                </li>
+                <li>
+                    <strong>Жанр:</strong>
+                    <span property="genre">Класика</span>
+                </li>
+            </ul>
+        </section>
     
 
 ```
