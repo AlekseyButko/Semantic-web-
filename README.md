@@ -164,16 +164,32 @@
 
 ### 1. JSON-LD
 ```json
-{
-  "@context": "https://schema.org",
-  "@type": "Book",
-  "name": "Хмарний Атлас",
-  "author": {
-    "@type": "Person",
-    "name": "Девід Мітчелл"
-  }
-  // ...інші властивості
-}
+ <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Book",
+      "name": "Три товариші",
+      "image": "/api/placeholder/200/300",
+      "author": {
+        "@type": "Person",
+        "name": "Еріх Марія Ремарк"
+      },
+      "isbn": "978-617-12-6067-2",
+      "numberOfPages": 480,
+      "publisher": {
+        "@type": "Organization",
+        "name": "Клуб Сімейного Дозвілля"
+      },
+      "datePublished": "2018-05-10",
+      "inLanguage": "uk",
+      "genre": "Класика",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.7",
+        "reviewCount": "1583"
+      }
+    }
+    </script>
 ```
 
 ### 2. Microdata
