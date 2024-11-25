@@ -273,8 +273,9 @@
 
 ### Результати тестування
 ✅ Всі три типи анотацій успішно валідовані
-![image](https://github.com/user-attachments/assets/30b4ac1b-18fd-4fcc-ba10-74dfff04912e)
-![image](https://github.com/user-attachments/assets/e866b132-20e3-4784-8fe1-23f96d3aa487)
+![image](https://github.com/user-attachments/assets/35a9bacf-f88e-4a9a-9e18-6287968590f8)
+![image](https://github.com/user-attachments/assets/9ddb6540-066c-4440-a90d-e4f544b0eed7)
+
 
 ## Лабораторна робота №01: Завдання 3 - RDF граф
 
