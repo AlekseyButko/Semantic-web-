@@ -347,19 +347,25 @@ python lab01_task3.py
 
 ## Результати виконання
 1. Генерується файл `graph.ttl` з початковим RDF графом
-   ![image](https://github.com/user-attachments/assets/74eb1fd9-d62c-47fb-89ef-16823ebadc25)
+   ![image](https://github.com/user-attachments/assets/652a9c60-70a2-4425-b650-93aa23f93603)
+
 3. Створюється `modified_graph.ttl` з модифікованими даними
-   ![image](https://github.com/user-attachments/assets/78aad1ec-9c20-4702-a75a-d6298eac62cf)
+  ![image](https://github.com/user-attachments/assets/46645119-1e38-4c3b-9a2c-1ed345e42bdc)
+
+
 5. У консоль виводяться:
    - Всі трійки графу
      
-     ![image](https://github.com/user-attachments/assets/a491e543-4351-4945-85bb-74cf831c452b)
+     ![image](https://github.com/user-attachments/assets/a4aa8d7b-9e12-4cd6-9f82-53152667f93a)
+
    - Інформація про Емму
      
-     ![image](https://github.com/user-attachments/assets/d9b0d12a-612b-4240-8f15-76acf79afdf2)
+     ![image](https://github.com/user-attachments/assets/530e1d37-6019-4081-be14-b917d01f2dd0)
+
    - Імена всіх людей
      
-     ![image](https://github.com/user-attachments/assets/84d7b15e-e515-4977-9e4f-e67a9e9a836c)
+    ![image](https://github.com/user-attachments/assets/cb10e308-3403-4635-a1e3-ed7d1634098c)
+
 
 # Лабораторна робота №02: SPARQL Запити
 
