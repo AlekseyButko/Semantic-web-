@@ -1,0 +1,149 @@
+[
+  {
+    "@id": "http://example.org/person/emma",
+    "@type": [
+      "http://xmlns.com/foaf/0.1/Person"
+    ],
+    "http://example.org/degree": [
+      {
+        "@value": "Master in Chemistry"
+      }
+    ],
+    "http://example.org/expertise": [
+      {
+        "@value": "waste management"
+      },
+      {
+        "@value": "toxic waste"
+      },
+      {
+        "@value": "air pollution"
+      }
+    ],
+    "http://example.org/graduationYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#gYear",
+        "@value": "2015"
+      }
+    ],
+    "http://example.org/visited": [
+      {
+        "@value": "Portugal"
+      },
+      {
+        "@value": "Italy"
+      },
+      {
+        "@value": "France"
+      },
+      {
+        "@value": "Germany"
+      },
+      {
+        "@value": "Denmark"
+      },
+      {
+        "@value": "Sweden"
+      }
+    ],
+    "http://schema.org/address": [
+      {
+        "@value": "Carrer de la Guardia Civil 20, 46020 Valencia, Spain"
+      }
+    ],
+    "http://schema.org/alumniOf": [
+      {
+        "@value": "University of Valencia"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/interest": [
+      {
+        "@value": "cycling"
+      },
+      {
+        "@value": "music"
+      },
+      {
+        "@value": "travel"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@value": "Emma"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/person/cade",
+    "@type": [
+      "http://xmlns.com/foaf/0.1/Person"
+    ],
+    "http://example.org/degree": [
+      {
+        "@value": "Bachelor in Biology"
+      }
+    ],
+    "http://example.org/graduationYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#gYear",
+        "@value": "2011"
+      }
+    ],
+    "http://example.org/metDate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#gYearMonth",
+        "@value": "2014-08"
+      }
+    ],
+    "http://example.org/metIn": [
+      {
+        "@value": "Paris"
+      }
+    ],
+    "http://example.org/visited": [
+      {
+        "@value": "Canada"
+      },
+      {
+        "@value": "France"
+      }
+    ],
+    "http://schema.org/address": [
+      {
+        "@value": "1516 Henry Street, Berkeley, California 94709, USA"
+      }
+    ],
+    "http://schema.org/alumniOf": [
+      {
+        "@value": "University of California"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/interest": [
+      {
+        "@value": "birds"
+      },
+      {
+        "@value": "ecology"
+      },
+      {
+        "@value": "environment"
+      },
+      {
+        "@value": "photography"
+      },
+      {
+        "@value": "travel"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/knows": [
+      {
+        "@id": "http://example.org/person/emma"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@value": "Cade"
+      }
+    ]
+  }
+]

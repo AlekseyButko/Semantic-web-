@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:ex="http://example.org/"
+   xmlns:foaf="http://xmlns.com/foaf/0.1/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:schema1="http://schema.org/"
+>
+  <rdf:Description rdf:about="http://example.org/person/cade">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name>Cade</foaf:name>
+    <schema1:address>1516 Henry Street, Berkeley, California 94709, USA</schema1:address>
+    <schema1:alumniOf>University of California</schema1:alumniOf>
+    <ex:degree>Bachelor in Biology</ex:degree>
+    <ex:graduationYear rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2011</ex:graduationYear>
+    <foaf:interest>birds</foaf:interest>
+    <foaf:interest>ecology</foaf:interest>
+    <foaf:interest>environment</foaf:interest>
+    <foaf:interest>photography</foaf:interest>
+    <foaf:interest>travel</foaf:interest>
+    <ex:visited>Canada</ex:visited>
+    <ex:visited>France</ex:visited>
+    <foaf:knows rdf:resource="http://example.org/person/emma"/>
+    <ex:metIn>Paris</ex:metIn>
+    <ex:metDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2014-08</ex:metDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/person/emma">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name>Emma</foaf:name>
+    <schema1:address>Carrer de la Guardia Civil 20, 46020 Valencia, Spain</schema1:address>
+    <schema1:alumniOf>University of Valencia</schema1:alumniOf>
+    <ex:degree>Master in Chemistry</ex:degree>
+    <ex:graduationYear rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2015</ex:graduationYear>
+    <ex:expertise>waste management</ex:expertise>
+    <ex:expertise>toxic waste</ex:expertise>
+    <ex:expertise>air pollution</ex:expertise>
+    <foaf:interest>cycling</foaf:interest>
+    <foaf:interest>music</foaf:interest>
+    <foaf:interest>travel</foaf:interest>
+    <ex:visited>Portugal</ex:visited>
+    <ex:visited>Italy</ex:visited>
+    <ex:visited>France</ex:visited>
+    <ex:visited>Germany</ex:visited>
+    <ex:visited>Denmark</ex:visited>
+    <ex:visited>Sweden</ex:visited>
+  </rdf:Description>
+</rdf:RDF>
