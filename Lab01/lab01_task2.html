@@ -1,29 +1,100 @@
 <!DOCTYPE html>
 <html lang="uk">
+
 <head>
     <meta charset="UTF-8">
     <title>Книга місяця | Книжковий клуб</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
             max-width: 800px;
-            margin: 0 auto;
+            margin: 40px;
             padding: 20px;
-            line-height: 1.6;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
+
+        h1,
+        h2 {
+            color: #333;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
         .book-card {
-            border: 1px solid #ddd;
-            padding: 20px;
-            border-radius: 8px;
-            margin: 20px 0;
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            border-bottom: 2px solid #ececec;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
         }
+
         .book-image {
-            max-width: 200px;
-            height: auto;
+            max-width: 150px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
         }
+
+        .book-details {
+            flex: 1;
+        }
+
+        .book-details div {
+            margin-bottom: 10px;
+        }
+
         .rating {
-            color: gold;
-            font-size: 20px;
+            color: #ff9800;
+            font-size: 1.2rem;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            background: #f9f9f9;
+            padding: 10px 15px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        ul li strong {
+            font-weight: 600;
+            color: #555;
+        }
+
+        @media (max-width: 600px) {
+            .book-card {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .book-image {
+                max-width: 100px;
+            }
         }
     </style>
     <!-- JSON-LD анотація -->
@@ -31,71 +102,83 @@
     {
       "@context": "https://schema.org",
       "@type": "Book",
-      "name": "Хмарний Атлас",
+      "name": "Три товариші",
+      "image": "/api/placeholder/200/300",
       "author": {
         "@type": "Person",
-        "name": "Девід Мітчелл"
+        "name": "Еріх Марія Ремарк"
       },
-      "isbn": "978-3442267819",
-      "numberOfPages": 509,
-      "publisher": "Видавництво Старого Лева",
-      "datePublished": "2004-03-15",
+      "isbn": "978-617-12-6067-2",
+      "numberOfPages": 480,
+      "publisher": {
+        "@type": "Organization",
+        "name": "Клуб Сімейного Дозвілля"
+      },
+      "datePublished": "2018-05-10",
       "inLanguage": "uk",
-      "genre": "Наукова фантастика",
+      "genre": "Класика",
       "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingValue": "4.8",
-        "reviewCount": "1252"
+        "ratingValue": "4.7",
+        "reviewCount": "1583"
       }
     }
     </script>
 </head>
-<body>
-    <!-- Microdata анотація -->
-    <article itemscope itemtype="https://schema.org/Book" class="book-card">
-        <h1 itemprop="name">Хмарний Атлас</h1>
-        
-        <img itemprop="image" src="/api/placeholder/200/300" alt="Обкладинка книги Хмарний Атлас" class="book-image">
-        
-        <div>
-            <strong>Автор:</strong> 
-            <span itemprop="author" itemscope itemtype="https://schema.org/Person">
-                <span itemprop="name">Девід Мітчелл</span>
-            </span>
-        </div>
-        
-        <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
-            <span class="rating">★★★★★</span>
-            <span itemprop="ratingValue">4.8</span>/5
-            на основі <span itemprop="reviewCount">1252</span> відгуків
-        </div>
-    </article>
 
-    <!-- RDFa анотація -->
-    <section vocab="https://schema.org/" typeof="Book">
-        <h2>Деталі книги</h2>
-        <ul>
-            <li>
-                <strong>ISBN:</strong>
-                <span property="isbn">978-3442267819</span>
-            </li>
-            <li>
-                <strong>Кількість сторінок:</strong>
-                <span property="numberOfPages">509</span>
-            </li>
-            <li>
-                <strong>Видавництво:</strong>
-                <span property="publisher">Видавництво Старого Лева</span>
-            </li>
-            <li>
-                <strong>Дата публікації:</strong>
-                <span property="datePublished">2004-03-15</span>
-            </li>
-            <li>
-                <strong>Жанр:</strong>
-                <span property="genre">Наукова фантастика</span>
-            </li>
-        </ul>
-    </section>
+<body>
+    <div class="container">
+        <!-- Microdata анотація -->
+        <article itemscope itemtype="https://schema.org/Book" class="book-card">
+            <img itemprop="image" src="/api/placeholder/200/300" alt="Обкладинка книги Три товариші" class="book-image">
+
+            <div class="book-details">
+                <h1 itemprop="name">Три товариші</h1>
+
+                <div>
+                    <strong>Автор:</strong>
+                    <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+                        <span itemprop="name">Еріх Марія Ремарк</span>
+                    </span>
+                </div>
+
+                <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                    <span class="rating">★★★★★</span>
+                    <span itemprop="ratingValue">4.7</span>/5
+                    на основі <span itemprop="reviewCount">1583</span> відгуків
+                </div>
+            </div>
+        </article>
+
+        <!-- RDFa анотація -->
+        <section vocab="https://schema.org/" typeof="Book">
+            <h2>Деталі книги</h2>
+            <ul>
+                <li>
+                    <strong>ISBN:</strong>
+                    <span property="isbn">978-617-12-6067-2</span>
+                </li>
+                <li>
+                    <strong>Кількість сторінок:</strong>
+                    <span property="numberOfPages">480</span>
+                </li>
+                <li>
+                    <strong>Видавництво:</strong>
+                    <span property="publisher" typeof="Organization">
+                        <span property="name">Клуб Сімейного Дозвілля</span>
+                    </span>
+                </li>
+                <li>
+                    <strong>Дата публікації:</strong>
+                    <span property="datePublished">2018-05-10</span>
+                </li>
+                <li>
+                    <strong>Жанр:</strong>
+                    <span property="genre">Класика</span>
+                </li>
+            </ul>
+        </section>
+    </div>
 </body>
+
 </html>
