@@ -40,9 +40,9 @@ async function getAllInstitutions() {
     console.log("Список навчальних закладів:");
     response.data.forEach((institution, index) => {
       console.log(
-        `№ ${index + 1}: ID: ${institution.id}, Назва: ${
-          institution.name
-        }, Адрес: ${institution.address}`
+        `№ ${index + 1}:  Назва: ${
+          institution.universityLabel.value
+        }, Адрес: ${institution.website?.value ?? 'Відсутня адреса'}`
       );
     });
 
