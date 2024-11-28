@@ -106,7 +106,7 @@
 2. [Schema.org Validator](https://validator.schema.org/)
 
 ### Файли
-- 📄 [lab01_task2.html](Lab01/lab01_task2.html) - HTML-сторінка з анотаціями
+- 📄 [lab01_task2.html](lab01_task2.html) - HTML-сторінка з анотаціями
 
 ### Особливості реалізації
 1. Використано схему "Lab01_task2" зі Schema.org
